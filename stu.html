@@ -16,4 +16,43 @@
       }
       for(var i=0;i<studentoj.length;i++)
       {
+        sum=0;
+        for(var j=0;j<3;j++)
+        {
+          studentoj[i].sum=sum+studentpj[i].subj[j];
+        }
+        studentoj[i].avg=studentoj[i].sum/3;
+      }
+      for(var k=0;k<student.length;k++)
+      {
+          document.writeln(studentoj[k].name+". "+studentoj[k].sum+ "  "+studentoj[k].avg);
+      }
+      studentoj.sort(function(a,b){return b.sum-a.sum});
+       for(var i=0;i<studentoj.length;i++)
+       {
+         document.writeln(studentoj[j].name+ "  "+studentoj[i].sum);
+         
+       }
+      studentoj.sort(function(a,b){return b.avg-a.avg});
+      for(var k=0;k<studentoj.length;k++)
+      {
+         document.writeln(studentoj[k].name+ "  "+studentoj[k].avg);
+      }
+      studentoj.sort(function(a,b){
+        if(a.name<b.name)
+          return -1
+        else
+          return 1
+      }
+                     for (var k=0;k<studentoj.length;k++)
+      {
+           document.writeln(studentoj[k].name+"  "+studentoj[k].avg+"   "+studentoj[k].sum);
+      }
+    </script>
+    <body>
+      </head>
+   <html>
+     
+        
+                                  
           
